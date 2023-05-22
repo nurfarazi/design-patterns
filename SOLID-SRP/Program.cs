@@ -2,12 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-// Single Responsibility Principle (SRP)
-// A class should have only one reason to change.
-// A class should have only one job.
-// A class should have only one responsibility.
-
-namespace SOLID
+namespace SOLID_SRP
 {
     internal class Program
     {

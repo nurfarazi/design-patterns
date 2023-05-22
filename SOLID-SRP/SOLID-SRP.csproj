@@ -5,11 +5,11 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{5F9303B6-C1BC-4940-8609-95A7D47D727F}</ProjectGuid>
+        <ProjectGuid>{1A15D2EF-A848-432A-803B-8963834BA069}</ProjectGuid>
         <OutputType>Exe</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>SOLID</RootNamespace>
-        <AssemblyName>SOLID</AssemblyName>
+        <RootNamespace>SOLID_SRP</RootNamespace>
+        <AssemblyName>SOLID_SRP</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
