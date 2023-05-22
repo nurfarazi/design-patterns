@@ -32,7 +32,7 @@ namespace SOLID
             System.Console.WriteLine($"Your favorite band is {band}.");
             System.Console.WriteLine("What is your favorite food?");
             var food = System.Console.ReadLine();
-            
+
             // Entry all user input into journal.
             journal.AddEntry($"Name: {name}");
             journal.AddEntry($"Age: {age}");
@@ -40,7 +40,7 @@ namespace SOLID
             journal.AddEntry($"Favorite Animal: {animal}");
             journal.AddEntry($"Favorite Band: {band}");
             journal.AddEntry($"Favorite Food: {food}");
-           
+
             System.Console.WriteLine(journal);
 
             var persistence = new Persistence();
@@ -52,9 +52,10 @@ namespace SOLID
             // log filename.
             System.Console.WriteLine(filename);
 
-            persistence.SaveToFile(journal, filename, true);
+            Persistence.SaveToFile(journal, filename, true);
         }
     }
+    // Journal class is only responsible for journal entries.
 
     public class Journal
     {
@@ -78,9 +79,10 @@ namespace SOLID
         }
     }
 
+    // Persistence class is only responsible for saving journal entries to file.
     public class Persistence
     {
-        public void SaveToFile(Journal journal, string filename, bool overwrite = false)
+        public static void SaveToFile(Journal journal, string filename, bool overwrite = false)
         {
             if (overwrite || !File.Exists(filename))
                 File.WriteAllText(filename, journal.ToString());
