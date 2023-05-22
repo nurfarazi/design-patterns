@@ -45,9 +45,9 @@
         <Compile Include="Enum\Rating.cs" />
         <Compile Include="Enum\Size.cs" />
         <Compile Include="Enum\Weight.cs" />
-        <Compile Include="IFilter.cs" />
-        <Compile Include="ImprovedFilter.cs" />
-        <Compile Include="ISpecification.cs" />
+        <Compile Include="Interfaces\IFilter.cs" />
+        <Compile Include="Interfaces\ImprovedFilter.cs" />
+        <Compile Include="Interfaces\ISpecification.cs" />
         <Compile Include="ProductFilter.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />

@@ -6,7 +6,7 @@ namespace SOLID_OCP
     {
         public static void Main(string[] args)
         {
-            var products = new Product[]
+            var products = new[]
             {
                 new Product("Apple", Color.Green, Size.Small),
                 new Product("Tree", Color.Green, Size.Large),
