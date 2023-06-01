@@ -8,3 +8,7 @@ riderModule.iml
 *.exe
 *.pdb
 .vs
+.vscode
+.vscode-test
+npm-debug.log*
+.idea
