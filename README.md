@@ -9,6 +9,13 @@
 The Factory Pattern is a creational design pattern that provides an interface for creating objects but lets subclasses
 decide which class to instantiate. In essence, it defers the object creation process to specialized "factory" classes.
 
+Benefits
+
+Loose Coupling: Reduces dependencies between client code and concrete implementations.
+Flexibility: Easily introduce new object types without modifying client code.
+Centralized Creation: Manages object creation in one place, improving code maintainability.
+Open/Closed Principle: Adheres to the principle that classes should be open for extension but closed for modification.
+
 ## Structural Design Patterns
 
 ## Behavioral Design Patterns
