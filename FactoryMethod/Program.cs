@@ -2,10 +2,11 @@
 
 class Program
 {
-    // Practical implementation of the Factory Method pattern
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        var client = new Client();
+        client.SendNotification("email");
+        client.SendNotification("sms");
     }
     
     // Factory Method pattern with notification interface
