@@ -6,7 +6,7 @@ This is completely for learning purposes and to understand the concepts of desig
 - Abstract Factory
 - ✅ Builder
 - ✅ Factory Method
-- Prototype
+- ✅ Prototype
 - ✅ Singleton 
 
 #### Structural Patterns
