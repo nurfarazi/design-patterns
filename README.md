@@ -5,9 +5,9 @@ This is completely for learning purposes and to understand the concepts of desig
 #### Creational Patterns
 - Abstract Factory
 - Builder
-- Factory Method ✅
+- ✅ Factory Method
 - Prototype
-- Singleton
+- ✅ Singleton 
 
 #### Structural Patterns
 - Adapter

@@ -5,16 +5,16 @@ class Program
     static void Main(string[] args)
     {
         var client = new Client();
-        client.SendNotification("email");
-        client.SendNotification("sms");
+        client.SendNotification(NotificationType.Email);
+        client.SendNotification(NotificationType.Sms);
     }
-    
+
     // Factory Method pattern with notification interface
     public interface INotification
     {
         void Notify();
     }
-    
+
     // Concrete implementation of the notification interface
     public class EmailNotification : INotification
     {
@@ -23,7 +23,7 @@ class Program
             Console.WriteLine("Email notification sent.");
         }
     }
-    
+
     // Concrete implementation of the notification interface
     public class SmsNotification : INotification
     {
@@ -32,34 +32,39 @@ class Program
             Console.WriteLine("SMS notification sent.");
         }
     }
-    
+
     // Factory method to create a notification
     public class NotificationFactory
     {
-        public INotification CreateNotification(string type)
+        public INotification CreateNotification(NotificationType type)
         {
             switch (type)
             {
-                case "email":
+                case NotificationType.Email:
                     return new EmailNotification();
-                case "sms":
+                case NotificationType.Sms:
                     return new SmsNotification();
                 default:
                     throw new ArgumentException("Invalid notification type.");
             }
         }
     }
-    
+
+    public enum NotificationType
+    {
+        Email = 0,
+        Sms = 1
+    }
+
     // Client code
     public class Client
     {
-        public void SendNotification(string type)
+        public void SendNotification(NotificationType type)
         {
             var factory = new NotificationFactory();
             var notification = factory.CreateNotification(type);
+
             notification.Notify();
         }
-        
     }
-    
 }
