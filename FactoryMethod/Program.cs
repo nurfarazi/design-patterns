@@ -49,4 +49,16 @@ class Program
         }
     }
     
+    // Client code
+    public class Client
+    {
+        public void SendNotification(string type)
+        {
+            var factory = new NotificationFactory();
+            var notification = factory.CreateNotification(type);
+            notification.Notify();
+        }
+        
+    }
+    
 }
