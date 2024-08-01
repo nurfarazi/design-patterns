@@ -4,7 +4,7 @@ This is completely for learning purposes and to understand the concepts of desig
 
 #### Creational Patterns
 - Abstract Factory
-- Builder
+- ✅ Builder
 - ✅ Factory Method
 - Prototype
 - ✅ Singleton 
