@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID-SRP", "SOLID-SRP\SOLI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID-OCP", "SOLID-OCP\SOLID-OCP.csproj", "{49608B76-A242-470D-A139-A8D797277D93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{35129035-9A6E-4C1A-B989-FD2DF1305186}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{49608B76-A242-470D-A139-A8D797277D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49608B76-A242-470D-A139-A8D797277D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49608B76-A242-470D-A139-A8D797277D93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35129035-9A6E-4C1A-B989-FD2DF1305186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35129035-9A6E-4C1A-B989-FD2DF1305186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35129035-9A6E-4C1A-B989-FD2DF1305186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35129035-9A6E-4C1A-B989-FD2DF1305186}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
