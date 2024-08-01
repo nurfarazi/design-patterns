@@ -1,6 +1,6 @@
 ﻿public class Journal
 {
-    private readonly List<string> _entries = new List<string>();
+    private readonly List<string> _entries = new();
     private static int _count = 0;
 
     public int AddEntry(string text)
