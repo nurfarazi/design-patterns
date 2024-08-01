@@ -5,7 +5,7 @@
 SOLID is an acronym for the first five object-oriented design (OOD) principles by Robert C. Martin (also known as Uncle Bob).
 
 ### Single Responsibility Principle (SRP)
-#### Why we should use this principle?
+#### Why should we use this principle?
 - A class should have one and only one reason to change, meaning that a class should have only one job.
 - A class should have only one responsibility.
 - A class should have only one actor/concept.

@@ -1,4 +1,6 @@
-﻿public class Journal
+﻿namespace SOLID_SRP;
+
+public class Journal
 {
     private readonly List<string> _entries = new();
     private static int _count = 0;

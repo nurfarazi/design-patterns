@@ -38,17 +38,17 @@ static void OldImplementation(Product[] products)
 {
     // Old implementation which violates Open Closed Principle
     var oldFilter = new ProductFilter();
-    var greenProductsOld = oldFilter.ByColor(products, Color.Green);
-    var largeProductsOld = oldFilter.BySize(products, Size.Large);
-    // log green products
-    foreach (var product in greenProductsOld)
-    {
-        System.Console.WriteLine($"{product.Name} is green");
-    }
-
-    // log large products
-    foreach (var product in largeProductsOld)
-    {
-        Console.WriteLine($"{product.Name} is large");
-    }
+    // var greenProductsOld = oldFilter.ByColor(products, Color.Green);
+    // var largeProductsOld = oldFilter.BySize(products, Size.Large);
+    // // log green products
+    // foreach (var product in greenProductsOld)
+    // {
+    //     System.Console.WriteLine($"{product.Name} is green");
+    // }
+    //
+    // // log large products
+    // foreach (var product in largeProductsOld)
+    // {
+    //     Console.WriteLine($"{product.Name} is large");
+    // }
 }

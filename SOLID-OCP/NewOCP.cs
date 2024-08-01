@@ -1,13 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace SOLID_OCP_v1
+namespace SOLID_OCP
 {
     public enum Color
     {
-        white = 0,
+        White = 0,
         Black = 1
     }
     class Product
@@ -30,16 +25,6 @@ namespace SOLID_OCP_v1
     }
     public class NewOCP
     {
-        public IEnumerable<Product> BySize(IEnumerable<Product> products, Size size)
-        {
-
-        }
-
-        public IEnumerable<Product> ByColor(IEnumerable<Product> products, Color color)
-        {
-            
-        }
-
 
     }
 }
