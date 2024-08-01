@@ -17,7 +17,7 @@ class Program
             factory = new DevelopmentNotificationFactory();
         }
 
-        NotificationService service = new NotificationService(factory);
+        var service = new NotificationService(factory);
         service.NotifyUser("Hello! This is a test notification.");
     }
 }
