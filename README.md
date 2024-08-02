@@ -10,7 +10,7 @@ This is completely for learning purposes and to understand the concepts of desig
 - ✅ Singleton 
 
 #### Structural Patterns
-- Adapter
+- ✅ Adapter
 - Bridge
 - Composite
 - Decorator
