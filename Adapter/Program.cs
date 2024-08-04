@@ -4,12 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        var emailNotification = new EmailNotification();
-        emailNotification.Send("Hello, world!");
-
         var advancedNotificationService = new AdvancedNotificationService();
-        var notificationAdapter = new NotificationAdapter(advancedNotificationService);
-        notificationAdapter.Send("Hello, world! from advanced service");
+        INotification notification = new NotificationAdapter(advancedNotificationService);
+
+        notification.Send("This is an important update!");
     }
 }
 
