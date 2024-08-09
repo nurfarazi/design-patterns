@@ -11,7 +11,7 @@ This is completely for learning purposes and to understand the concepts of desig
 
 #### Structural Patterns
 - ✅ Adapter
-- Bridge
+- ✅ Bridge
 - Composite
 - Decorator
 - Facade
