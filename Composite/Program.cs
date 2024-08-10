@@ -32,10 +32,11 @@ public interface IMenuComponent
     decimal GetPrice();
 }
 
+// Leaf (Menu Item)
 public class MenuItem : IMenuComponent
 {
-    private string _name;
-    private decimal _price;
+    private readonly string _name;
+    private readonly decimal _price;
 
     public MenuItem(string name, decimal price)
     {
@@ -56,8 +57,8 @@ public class MenuItem : IMenuComponent
 
 public class MenuComposite : IMenuComponent
 {
-    private readonly List<IMenuComponent> _menuItems = new List<IMenuComponent>();
-    private string _name;
+    private readonly List<IMenuComponent> _menuItems = [];
+    private readonly string _name;
 
     public MenuComposite(string name)
     {
