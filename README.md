@@ -12,8 +12,8 @@ This is completely for learning purposes and to understand the concepts of desig
 #### Structural Patterns
 - ✅ Adapter
 - ✅ Bridge
-- Composite
-- Decorator
+- ✅ Composite
+- ✅ Decorator
 - Facade
 - Flyweight
 - Proxy
