@@ -15,11 +15,11 @@ This is completely for learning purposes and to understand the concepts of desig
 - ✅ Composite
 - ✅ Decorator
 - ✅ Facade
-- Flyweight
+- ✅ Flyweight
 - ✅ Proxy
 
 #### Behavioral Patterns
-- Chain of Responsibility
+- ✅ Chain of Responsibility
 - Command
 - Interpreter
 - Iterator
@@ -30,3 +30,5 @@ This is completely for learning purposes and to understand the concepts of desig
 - Strategy
 - Template Method
 - Visitor
+
+Demonstrates the creational, structural, and behavioral design patterns in C# and .NET.
