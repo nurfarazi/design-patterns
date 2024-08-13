@@ -16,7 +16,7 @@ This is completely for learning purposes and to understand the concepts of desig
 - ✅ Decorator
 - ✅ Facade
 - Flyweight
-- Proxy
+- ✅ Proxy
 
 #### Behavioral Patterns
 - Chain of Responsibility
