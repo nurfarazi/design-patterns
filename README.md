@@ -14,7 +14,7 @@ This is completely for learning purposes and to understand the concepts of desig
 - ✅ Bridge
 - ✅ Composite
 - ✅ Decorator
-- Facade
+- ✅ Facade
 - Flyweight
 - Proxy
 
