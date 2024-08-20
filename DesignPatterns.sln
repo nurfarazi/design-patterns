@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# 
+#
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{35129035-9A6E-4C1A-B989-FD2DF1305186}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{1A6FD0EC-90DD-4C4E-8B23-1C60EC6A430A}"
@@ -28,6 +28,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainofResponsibility", "ChainofResponsibility\ChainofResponsibility.csproj", "{4CD4A339-10AB-4A37-BFF5-D67B2876B8F6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{D9F9E390-7AAF-4DFC-8A9B-2A105D0FF5C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State", "State\State.csproj", "{E4CDEBF5-5E40-4316-8021-CE4F988D12C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,5 +93,9 @@ Global
 		{D9F9E390-7AAF-4DFC-8A9B-2A105D0FF5C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9F9E390-7AAF-4DFC-8A9B-2A105D0FF5C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9F9E390-7AAF-4DFC-8A9B-2A105D0FF5C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4CDEBF5-5E40-4316-8021-CE4F988D12C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4CDEBF5-5E40-4316-8021-CE4F988D12C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4CDEBF5-5E40-4316-8021-CE4F988D12C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4CDEBF5-5E40-4316-8021-CE4F988D12C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
