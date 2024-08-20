@@ -25,10 +25,15 @@ This is completely for learning purposes and to understand the concepts of desig
 - Iterator
 - Mediator
 - Memento
-- Observer
-- State
+- ✅ Observer
+- ✅ State
 - ✅ Strategy
-- Template Method
+- ✅ Template Method
 - Visitor
 
-Demonstrates the creational, structural, and behavioral design patterns in C# and .NET.
+Demonstrates the creational, structural, and behavioral design patterns in C# and .NET 8
+
+### TODO
+- Add Anti-patterns with each design pattern
+- Add more examples for each design pattern
+- Add definition and explanation for each design pattern
