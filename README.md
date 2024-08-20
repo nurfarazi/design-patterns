@@ -27,7 +27,7 @@ This is completely for learning purposes and to understand the concepts of desig
 - Memento
 - Observer
 - State
-- Strategy
+- ✅ Strategy
 - Template Method
 - Visitor
 
