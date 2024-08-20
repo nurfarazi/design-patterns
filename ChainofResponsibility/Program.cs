@@ -49,26 +49,17 @@ public abstract class AbstractEmailHandler : IEmailHandler
         {
             return await _nextHandler.Handle(to, subject, body);
         }
-        else
-        {
-            return false; // End of chain, no handler could send the email
-        }
+
+        return false; // End of a chain, no handler could send the email
     }
 }
 
 // Concrete Handlers
-public class SendGridHandler : AbstractEmailHandler
+public class SendGridHandler(IEmailSender emailSender) : AbstractEmailHandler
 {
-    private readonly IEmailSender _emailSender;
-
-    public SendGridHandler(IEmailSender emailSender)
-    {
-        _emailSender = emailSender;
-    }
-
     public override async Task<bool> Handle(string to, string subject, string body)
     {
-        var result = await _emailSender.SendEmailAsync(to, subject, body);
+        var result = await emailSender.SendEmailAsync(to, subject, body);
         if (!result)
         {
             return await base.Handle(to, subject, body);
@@ -99,18 +90,11 @@ public class GmailHandler : AbstractEmailHandler
     }
 }
 
-public class YahooHandler : AbstractEmailHandler
+public class YahooHandler(IEmailSender emailSender) : AbstractEmailHandler
 {
-    private readonly IEmailSender _emailSender;
-
-    public YahooHandler(IEmailSender emailSender)
-    {
-        _emailSender = emailSender;
-    }
-
     public override async Task<bool> Handle(string to, string subject, string body)
     {
-        var result = await _emailSender.SendEmailAsync(to, subject, body);
+        var result = await emailSender.SendEmailAsync(to, subject, body);
         if (!result)
         {
             return await base.Handle(to, subject, body);
@@ -121,7 +105,6 @@ public class YahooHandler : AbstractEmailHandler
 }
 
 // Concrete Email Senders
-
 public class SendGridEmailSender : IEmailSender
 {
     public async Task<bool> SendEmailAsync(string to, string subject, string body)
