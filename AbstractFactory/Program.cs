@@ -4,9 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Abstract Factory pattern to a scenario where we're creating a notification
-        // system that can produce different types of notifications (like Email, SMS, and Push)
-        // based on the environment or platform (e.g., Development, Staging, Production).
+
+        // Abstract Factory Pattern (Simple Definition)
+        
+        // It’s like a factory that makes other factories — 
+        // each factory makes a whole set of matching things.
         INotificationFactory factory;
         if (Environment.GetEnvironmentVariable("ENV") == "PRODUCTION")
         {
