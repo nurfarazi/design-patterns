@@ -2,6 +2,19 @@
 
 class Program
 {
+    // Factory Method pattern
+    // that can produce different types of notifications (Email and SMS) based on the type specified.
+    // It uses an interface for the notification and concrete classes for each type of notification.
+
+    // definition
+    // Factory Method pattern is a creational design pattern that provides an
+    // interface for creating objects in a superclass,
+    // but allows subclasses to alter the type of objects that will be created.
+
+    // simple defination 
+    // Factory Method is a design pattern that defines an interface for creating an object,
+    // but lets subclasses alter the type of objects that will be created.
+    // It is a way to encapsulate the instantiation logic of an object,
     static void Main(string[] args)
     {
         var client = new Client();
