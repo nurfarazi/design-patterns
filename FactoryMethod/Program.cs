@@ -2,6 +2,8 @@
 
 class Program
 {
+
+    
     // Factory Method pattern
     // that can produce different types of notifications (Email and SMS) based on the type specified.
     // It uses an interface for the notification and concrete classes for each type of notification.

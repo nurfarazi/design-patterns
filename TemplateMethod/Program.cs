@@ -4,6 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
+
+        // Template Method Pattern means making a list of steps to do something, 
+        // like a recipe, but letting others change some of the steps.
+
+        // It's like saying:
+        // “First, do this... Then do that... But step 3 — you can do it your way!”
+
+
         CheckoutProcessTemplate creditCardCheckout = new CreditCardCheckout();
         creditCardCheckout.Checkout();
         // Output:

@@ -2,6 +2,10 @@
 {
     static void Main(string[] args)
     {
+
+        // Strategy Pattern lets you choose a specific behavior (or algorithm) 
+        // at runtime, without changing the code that uses it.
+        
         // Create products
         var product1 = new Product("Laptop", 1000);
         var product2 = new Product("Mouse", 20);
@@ -20,7 +24,7 @@
         // Shopping cart
         var shoppingCart = new ShoppingCart(new FixedAmountDiscountStrategy(100));
         Console.WriteLine($"Total price: {shoppingCart.Checkout(1000)}");
-        
+
     }
 }
 
@@ -97,13 +101,14 @@ public class Product
     public string Name { get; set; }
     public decimal Price { get; set; }
 
-    public Product(string name, decimal price){
+    public Product(string name, decimal price)
+    {
         Name = name;
         Price = price;
         _discountStrategy = new NoDiscountStrategy();
     }
 
-     public void SetDiscountStrategy(IDiscountStrategy discountStrategy)
+    public void SetDiscountStrategy(IDiscountStrategy discountStrategy)
     {
         _discountStrategy = discountStrategy;
     }
